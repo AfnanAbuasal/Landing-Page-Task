@@ -672,9 +672,13 @@ body {
     font-weight: bold;
     font-size: 15px;
 }
- .testimonials .rank {
+.testimonials .rank {
     font-size: 13px;
     color: #969696;
+}
+.testimonials .rating {
+    display: flex;
+    gap: 5px;
 }
 .testimonials i {
     color: #F1CC4A;
@@ -697,10 +701,23 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+.testimonials .arrows {
+    display: none;
+}
 /* End Testimonials Section Style */
 
 /* Start Testimonials Media */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1130px) {
+    .testimonials blockquote {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .testimonials blockquote {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 680px) {
     .testimonials blockquote {
         width: 100%;
     }
